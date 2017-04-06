@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+  
+  
+<body>
+  
+  <h1 style='text-align:center'>TV Screen Slideshow </h1><h3 style='text-align:center'>Timed Image Rotation</h3>
+  
+  
+<div id="myTV"><div id="myScreen"></div></div>
+<script>
+var myScreen = document.getElementById('myScreen');
+var myPics = ['http://i1356.photobucket.com/albums/q729/eleftheria_b/dailycssimages/5.cuteAnimal_zpsj4dnwmoa.png','http://i1356.photobucket.com/albums/q729/eleftheria_b/dailycssimages/4.tiger_zpsd7sm9sck.png','http://i1356.photobucket.com/albums/q729/eleftheria_b/dailycssimages/beaver_zpsqxe6izo5.png','http://i1356.photobucket.com/albums/q729/eleftheria_b/dailycssimages/elephant_zpssrmhao22.png'];
+var totalPics = myPics.length;
+var i = 0;
+function loop() {
+	if(i > (totalPics - 1)){
+		i = 0;
+	}
+	myScreen.innerHTML = '<img src="'+myPics[i]+'">';
+	i++;
+	loopTimer = setTimeout('loop()',3000);
+}
+loop();
+</script>
+  
+  
+  
+  
+  <!---------------------- 
+          Footer 
+     ----------------------->    
+    <div id="footer"> <!-- for footer -->
+      <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+    </div> <!-- end footer -->
+  
+  
+</body>
+</html>

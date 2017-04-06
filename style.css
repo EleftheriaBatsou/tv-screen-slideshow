@@ -1,0 +1,29 @@
+#myTV {
+  position: relative;
+  margin: auto;
+  display: block;
+  
+	background-image:url(https://images.pexels.com/photos/205316/pexels-photo-205316.png?h=350&auto=compress&cs=tinysrgb);
+	width:520px;
+	height:364px;
+	
+  /* padding-top:20px;  */
+}
+#myScreen {}
+
+img{
+  position: absolute;
+  top: 23%;
+  left: 32%;
+  width: 181px;
+  height: 105px;
+}
+
+#footer{
+  text-align: center;
+  color: black;
+}
+
+#footer a:link{color: black; text-decoration: none;}
+#footer a:visited{color: black; text-decoration: none;}
+#footer a:hover{color: black; text-decoration: underline;}
